@@ -24,7 +24,7 @@ app.use('/api/logs',         require('./routes/logs'));
 app.use('/api/users',        require('./routes/users'));
 
 // ── Health check ──────────────────────────────────────────────────────────────
-// Visit http://localhost:3000/api/health to confirm the server is running
+// Visit https://finance-tracker-tool-upay.onrender.com/api/health to confirm the server is running
 app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', message: 'UPAY backend is running!' });
 });
