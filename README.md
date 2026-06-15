@@ -53,7 +53,7 @@ node server.js
 
 You should see:
 ```
-✅  UPAY server running  →  http://localhost:3000
+✅  UPAY server running  →  https://finance-tracker-tool-upay.onrender.com/api
 📊  Data file            →  backend/upay-data.xlsx
 ✅  upay-data.xlsx created with default users + sample transactions
 ```
