@@ -15,7 +15,9 @@ app.use(express.json());
 
 // Serve the frontend folder as static files
 // So visiting http://localhost:3000 opens frontend/index.html
-app.use(express.static(path.join(__dirname, '..', 'frontend')));
+const FRONTEND_DIR = path.join(__dirname, '..');
+
+app.use(express.static(FRONTEND_DIR));
 
 // ── API Routes ────────────────────────────────────────────────────────────────
 app.use('/api/auth',         require('./routes/auth'));
