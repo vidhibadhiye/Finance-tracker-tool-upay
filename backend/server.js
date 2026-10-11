@@ -30,7 +30,7 @@ app.get('/api/health', (_req, res) => {
 });
 
 // ── Start the server ──────────────────────────────────────────────────────────
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`\n✅  UPAY server running  →  http://localhost:${PORT}`);
   console.log(`📊  Data file            →  backend/upay-data.xlsx\n`);
