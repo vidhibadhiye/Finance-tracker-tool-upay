@@ -160,6 +160,7 @@ const today = () => new Date().toISOString().split('T')[0];
 const uid = () => Math.random().toString(36).slice(2,9);
 
 const BASE_URL = 'https://finance-tracker-tool-upay-production.up.railway.app/api'; 
+  // Railway API configuration
 
 const api = {
   getToken: () => localStorage.getItem('upay_token'),
